@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+#controls {
+  width: 260px;
+  padding: 1rem;
+  background: #f4f4f4;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+#workspace {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  position: relative;
+}
+#canvasWrapper {
+  position: relative;
+}
+#gridCanvas {
+  border: 1px solid #999;
+  background: transparent;
+}
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  cursor: move;
+  transform-origin: top left;
+  display: none;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.form-row label {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+.form-row input, .form-row select, .form-row button {
+  flex: 1;
+}
+.hidden {
+  display: none;
+}
