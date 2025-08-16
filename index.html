@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Top Accessories</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">Table Top Accessories</div>
+    <nav class="top-nav">
+      <button id="projectBtn" aria-label="Project options">Project</button>
+      <button id="exportBtn" aria-label="Export">Export</button>
+      <button id="undoBtn" aria-label="Undo" disabled>Undo</button>
+      <button id="redoBtn" aria-label="Redo" disabled>Redo</button>
+      <button id="helpBtn" aria-label="Help">Help</button>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Panel Navigator">
+      <ul>
+        <li><button class="panel-btn" data-panel="grid">Grid Panel</button></li>
+      </ul>
+    </aside>
+    <main class="workspace">
+      <canvas id="canvas" tabindex="0" aria-label="Canvas workspace"></canvas>
+    </main>
+    <aside class="properties" aria-label="Contextual properties">
+      <div id="breadcrumbs" class="breadcrumbs">Grid &gt; Hex &gt; Style</div>
+      <div id="propertiesContent" class="properties-content"></div>
+    </aside>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
